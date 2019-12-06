@@ -1,0 +1,506 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		155BCEAF7E2F365146ABA090 /* Pods_QuickReportsApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3C80160CCA31692A2E11184 /* Pods_QuickReportsApp.framework */; };
+		63A73DCB23883DB000063987 /* ReportsDatabaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A73DCA23883DB000063987 /* ReportsDatabaseViewController.swift */; };
+		63A73DCD23883DD200063987 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A73DCC23883DD200063987 /* HomePageViewController.swift */; };
+		63A73DCF23883E8000063987 /* NewReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A73DCE23883E8000063987 /* NewReportViewController.swift */; };
+		63B54F2D2388473E0003E9AD /* Camera.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 63B54F2C2388473E0003E9AD /* Camera.jpg */; };
+		63C4445E2385900800F3955B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C4445D2385900800F3955B /* AppDelegate.swift */; };
+		63C444602385900800F3955B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C4445F2385900800F3955B /* ViewController.swift */; };
+		63C444632385900800F3955B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63C444612385900800F3955B /* Main.storyboard */; };
+		63C444662385900800F3955B /* QuickReports.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 63C444642385900800F3955B /* QuickReports.xcdatamodeld */; };
+		63C444682385900A00F3955B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63C444672385900A00F3955B /* Assets.xcassets */; };
+		63C4446B2385900A00F3955B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63C444692385900A00F3955B /* LaunchScreen.storyboard */; };
+		9414BA1B238E296200007A61 /* report.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9414BA1A238E296200007A61 /* report.swift */; };
+		942089C82394109000B31A30 /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942089C72394109000B31A30 /* DBManager.swift */; };
+		943A6FDE2392E7C500A90D6B /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 943A6FD22392E7C500A90D6B /* FMDatabaseAdditions.m */; };
+		943A6FE02392E7C500A90D6B /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 943A6FD62392E7C500A90D6B /* FMDatabasePool.m */; };
+		943A6FE12392E7C500A90D6B /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 943A6FD72392E7C500A90D6B /* FMDatabaseQueue.m */; };
+		943A6FE22392E7C500A90D6B /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 943A6FD82392E7C500A90D6B /* FMDatabase.m */; };
+		943A6FE32392E7C500A90D6B /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 943A6FDB2392E7C500A90D6B /* FMResultSet.m */; };
+		947DDE262392E23F009CC5D4 /* podFile in Resources */ = {isa = PBXBuildFile; fileRef = 947DDE252392E23F009CC5D4 /* podFile */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		63A73DCA23883DB000063987 /* ReportsDatabaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportsDatabaseViewController.swift; sourceTree = "<group>"; };
+		63A73DCC23883DD200063987 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
+		63A73DCE23883E8000063987 /* NewReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewReportViewController.swift; sourceTree = "<group>"; };
+		63B54F2C2388473E0003E9AD /* Camera.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Camera.jpg; sourceTree = SOURCE_ROOT; };
+		63C4445A2385900800F3955B /* QuickReportsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickReportsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		63C4445D2385900800F3955B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		63C4445F2385900800F3955B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		63C444622385900800F3955B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		63C444652385900800F3955B /* CameraApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CameraApp.xcdatamodel; sourceTree = "<group>"; };
+		63C444672385900A00F3955B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		63C4446A2385900A00F3955B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		63C4446C2385900A00F3955B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69B290092830A841CA2790BB /* Pods-QuickReportsApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickReportsApp.debug.xcconfig"; path = "Target Support Files/Pods-QuickReportsApp/Pods-QuickReportsApp.debug.xcconfig"; sourceTree = "<group>"; };
+		9414BA14238E1CAC00007A61 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		9414BA1A238E296200007A61 /* report.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = report.swift; sourceTree = "<group>"; };
+		942089C72394109000B31A30 /* DBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
+		943A6FD12392E7C400A90D6B /* QuickReportsApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "QuickReportsApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		943A6FD22392E7C500A90D6B /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseAdditions.m; path = "../../../fmdb-master/src/fmdb/FMDatabaseAdditions.m"; sourceTree = "<group>"; };
+		943A6FD32392E7C500A90D6B /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDB.h; path = "../../../fmdb-master/src/fmdb/FMDB.h"; sourceTree = "<group>"; };
+		943A6FD42392E7C500A90D6B /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabaseQueue.h; path = "../../../fmdb-master/src/fmdb/FMDatabaseQueue.h"; sourceTree = "<group>"; };
+		943A6FD62392E7C500A90D6B /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabasePool.m; path = "../../../fmdb-master/src/fmdb/FMDatabasePool.m"; sourceTree = "<group>"; };
+		943A6FD72392E7C500A90D6B /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseQueue.m; path = "../../../fmdb-master/src/fmdb/FMDatabaseQueue.m"; sourceTree = "<group>"; };
+		943A6FD82392E7C500A90D6B /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabase.m; path = "../../../fmdb-master/src/fmdb/FMDatabase.m"; sourceTree = "<group>"; };
+		943A6FD92392E7C500A90D6B /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabaseAdditions.h; path = "../../../fmdb-master/src/fmdb/FMDatabaseAdditions.h"; sourceTree = "<group>"; };
+		943A6FDA2392E7C500A90D6B /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMResultSet.h; path = "../../../fmdb-master/src/fmdb/FMResultSet.h"; sourceTree = "<group>"; };
+		943A6FDB2392E7C500A90D6B /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMResultSet.m; path = "../../../fmdb-master/src/fmdb/FMResultSet.m"; sourceTree = "<group>"; };
+		943A6FDC2392E7C500A90D6B /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabasePool.h; path = "../../../fmdb-master/src/fmdb/FMDatabasePool.h"; sourceTree = "<group>"; };
+		943A6FDD2392E7C500A90D6B /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabase.h; path = "../../../fmdb-master/src/fmdb/FMDatabase.h"; sourceTree = "<group>"; };
+		947DDE252392E23F009CC5D4 /* podFile */ = {isa = PBXFileReference; lastKnownFileType = text; path = podFile; sourceTree = "<group>"; };
+		B3C80160CCA31692A2E11184 /* Pods_QuickReportsApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuickReportsApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C565BAA3BE1A2A15F64B1E44 /* Pods-QuickReportsApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickReportsApp.release.xcconfig"; path = "Target Support Files/Pods-QuickReportsApp/Pods-QuickReportsApp.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		63C444572385900800F3955B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				155BCEAF7E2F365146ABA090 /* Pods_QuickReportsApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		63C444512385900800F3955B = {
+			isa = PBXGroup;
+			children = (
+				63C4445C2385900800F3955B /* QuickReportsApp */,
+				63C4445B2385900800F3955B /* Products */,
+				9414BA13238E1CAC00007A61 /* Frameworks */,
+				89E7FA0CA028BC0903A4A824 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		63C4445B2385900800F3955B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				63C4445A2385900800F3955B /* QuickReportsApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		63C4445C2385900800F3955B /* QuickReportsApp */ = {
+			isa = PBXGroup;
+			children = (
+				943A6FD02392E75E00A90D6B /* FMDB */,
+				63B54F2C2388473E0003E9AD /* Camera.jpg */,
+				63C4445D2385900800F3955B /* AppDelegate.swift */,
+				63C4445F2385900800F3955B /* ViewController.swift */,
+				942089C72394109000B31A30 /* DBManager.swift */,
+				63C444612385900800F3955B /* Main.storyboard */,
+				63C444672385900A00F3955B /* Assets.xcassets */,
+				63C444692385900A00F3955B /* LaunchScreen.storyboard */,
+				63C4446C2385900A00F3955B /* Info.plist */,
+				63C444642385900800F3955B /* QuickReports.xcdatamodeld */,
+				63A73DCA23883DB000063987 /* ReportsDatabaseViewController.swift */,
+				63A73DCC23883DD200063987 /* HomePageViewController.swift */,
+				63A73DCE23883E8000063987 /* NewReportViewController.swift */,
+				947DDE252392E23F009CC5D4 /* podFile */,
+				9414BA1A238E296200007A61 /* report.swift */,
+			);
+			path = QuickReportsApp;
+			sourceTree = "<group>";
+		};
+		89E7FA0CA028BC0903A4A824 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				69B290092830A841CA2790BB /* Pods-QuickReportsApp.debug.xcconfig */,
+				C565BAA3BE1A2A15F64B1E44 /* Pods-QuickReportsApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9414BA13238E1CAC00007A61 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9414BA14238E1CAC00007A61 /* libsqlite3.tbd */,
+				B3C80160CCA31692A2E11184 /* Pods_QuickReportsApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		943A6FD02392E75E00A90D6B /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				943A6FDD2392E7C500A90D6B /* FMDatabase.h */,
+				943A6FD82392E7C500A90D6B /* FMDatabase.m */,
+				943A6FD92392E7C500A90D6B /* FMDatabaseAdditions.h */,
+				943A6FD22392E7C500A90D6B /* FMDatabaseAdditions.m */,
+				943A6FDC2392E7C500A90D6B /* FMDatabasePool.h */,
+				943A6FD62392E7C500A90D6B /* FMDatabasePool.m */,
+				943A6FD42392E7C500A90D6B /* FMDatabaseQueue.h */,
+				943A6FD72392E7C500A90D6B /* FMDatabaseQueue.m */,
+				943A6FD32392E7C500A90D6B /* FMDB.h */,
+				943A6FDA2392E7C500A90D6B /* FMResultSet.h */,
+				943A6FDB2392E7C500A90D6B /* FMResultSet.m */,
+				943A6FD12392E7C400A90D6B /* QuickReportsApp-Bridging-Header.h */,
+			);
+			path = FMDB;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		63C444592385900800F3955B /* QuickReportsApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63C4446F2385900A00F3955B /* Build configuration list for PBXNativeTarget "QuickReportsApp" */;
+			buildPhases = (
+				76E81A13FAF828F483D5DDB2 /* [CP] Check Pods Manifest.lock */,
+				63C444562385900800F3955B /* Sources */,
+				63C444572385900800F3955B /* Frameworks */,
+				63C444582385900800F3955B /* Resources */,
+				BBC3B61BE078F3CAE15EFE86 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QuickReportsApp;
+			productName = CameraApp;
+			productReference = 63C4445A2385900800F3955B /* QuickReportsApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		63C444522385900800F3955B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = WSU;
+				TargetAttributes = {
+					63C444592385900800F3955B = {
+						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1120;
+					};
+				};
+			};
+			buildConfigurationList = 63C444552385900800F3955B /* Build configuration list for PBXProject "QuickReportsApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 63C444512385900800F3955B;
+			productRefGroup = 63C4445B2385900800F3955B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				63C444592385900800F3955B /* QuickReportsApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		63C444582385900800F3955B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63C4446B2385900A00F3955B /* LaunchScreen.storyboard in Resources */,
+				63C444682385900A00F3955B /* Assets.xcassets in Resources */,
+				63B54F2D2388473E0003E9AD /* Camera.jpg in Resources */,
+				947DDE262392E23F009CC5D4 /* podFile in Resources */,
+				63C444632385900800F3955B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		76E81A13FAF828F483D5DDB2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QuickReportsApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BBC3B61BE078F3CAE15EFE86 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QuickReportsApp/Pods-QuickReportsApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QuickReportsApp/Pods-QuickReportsApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QuickReportsApp/Pods-QuickReportsApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		63C444562385900800F3955B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63A73DCB23883DB000063987 /* ReportsDatabaseViewController.swift in Sources */,
+				63A73DCD23883DD200063987 /* HomePageViewController.swift in Sources */,
+				63C444662385900800F3955B /* QuickReports.xcdatamodeld in Sources */,
+				942089C82394109000B31A30 /* DBManager.swift in Sources */,
+				9414BA1B238E296200007A61 /* report.swift in Sources */,
+				943A6FE02392E7C500A90D6B /* FMDatabasePool.m in Sources */,
+				943A6FE12392E7C500A90D6B /* FMDatabaseQueue.m in Sources */,
+				943A6FE32392E7C500A90D6B /* FMResultSet.m in Sources */,
+				63A73DCF23883E8000063987 /* NewReportViewController.swift in Sources */,
+				63C444602385900800F3955B /* ViewController.swift in Sources */,
+				63C4445E2385900800F3955B /* AppDelegate.swift in Sources */,
+				943A6FE22392E7C500A90D6B /* FMDatabase.m in Sources */,
+				943A6FDE2392E7C500A90D6B /* FMDatabaseAdditions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		63C444612385900800F3955B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63C444622385900800F3955B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		63C444692385900A00F3955B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63C4446A2385900A00F3955B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		63C4446D2385900A00F3955B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		63C4446E2385900A00F3955B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		63C444702385900A00F3955B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69B290092830A841CA2790BB /* Pods-QuickReportsApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U4LM4MN3CY;
+				INFOPLIST_FILE = "$(SRCROOT)/QuickReportsApp/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = QuickReports;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "QuickReportsApp/FMDB/QuickReportsApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		63C444712385900A00F3955B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C565BAA3BE1A2A15F64B1E44 /* Pods-QuickReportsApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U4LM4MN3CY;
+				INFOPLIST_FILE = "$(SRCROOT)/QuickReportsApp/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = QuickReports;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "QuickReportsApp/FMDB/QuickReportsApp-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		63C444552385900800F3955B /* Build configuration list for PBXProject "QuickReportsApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63C4446D2385900A00F3955B /* Debug */,
+				63C4446E2385900A00F3955B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63C4446F2385900A00F3955B /* Build configuration list for PBXNativeTarget "QuickReportsApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63C444702385900A00F3955B /* Debug */,
+				63C444712385900A00F3955B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		63C444642385900800F3955B /* QuickReports.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				63C444652385900800F3955B /* CameraApp.xcdatamodel */,
+			);
+			currentVersion = 63C444652385900800F3955B /* CameraApp.xcdatamodel */;
+			path = QuickReports.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 63C444522385900800F3955B /* Project object */;
+}

@@ -1,0 +1,26 @@
+PODS:
+  - Alamofire (4.9.1)
+  - DarkSkyKit (0.0.6):
+    - Alamofire (~> 4.0)
+  - FMDB (2.7.5):
+    - FMDB/standard (= 2.7.5)
+  - FMDB/standard (2.7.5)
+
+DEPENDENCIES:
+  - DarkSkyKit
+  - FMDB
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - DarkSkyKit
+    - FMDB
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  DarkSkyKit: ae500687161b11e1f352cdf261ff620fe3837cf5
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+
+PODFILE CHECKSUM: b6c7b481e4e2a02122d362d65a533c82063134a3
+
+COCOAPODS: 1.8.4
